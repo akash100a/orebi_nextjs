@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,12 +27,9 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}> 
-        <nav className="flex gap-4">
-          <Link href='/'>Home</Link>
-          <Link href='/about'>About</Link>
-          <Link href='/blog'>Blog</Link>
-        </nav>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

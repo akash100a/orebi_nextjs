@@ -1,13 +1,11 @@
-"use client"
 import React from 'react'
 import love from '../public/Icon_heart.png';
 import compare from '../public/Icon_compare.png';
 import cart from '../public/Icon_cart (1).png';
 import Link from 'next/link';
-// import { useNavigate } from 'react-router-dom';
+// import DynamicBlur from './components/blur/dynamic/DynamicBlur';
 
 const Item = ({ productTitle, productImg, productPrice, productTag, productColor, productid, className }) => {
-    // const navigate = useNavigate();
     return (
         <>
             <div className={`item 2xl:w-[370px] 2xl:xl:w-[300px] lg:w-[232px] md:w-[240px] sm:w-[290px]  cursor-pointer relative group ${className}`}>
@@ -16,6 +14,7 @@ const Item = ({ productTitle, productImg, productPrice, productTag, productColor
                 </div>
                 <div className="2xl:h-[370px] w-full xl:h-[300px] lg:h-[232px] bg-slate-200">
                     <img className='object-cover w-full h-full' src={productImg ? productImg : null} alt="productImg" />
+                    {/* <DynamicBlur src={productImg} width='370' height='370'/> */}
                 </div>
                 <div className="main group-hover:bg-[#ebf0fa] relative z-20">
                     <div className="flex justify-between pt-[24px] xl:pt-[16px] xl:pb-[12px] pb-[15px] ">

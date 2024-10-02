@@ -3,6 +3,7 @@ const getAllData = async () => {
     if(response.ok){
         let data = response.json()
         return data;
+        // Returning data promise
     }else{
         throw new Error("Ther Was An Error fetching posts");
         

@@ -1,4 +1,4 @@
-import Container from '@/app/Container'
+import Container from '@/app/components/layers/Container'
 import getData from '@/app/lib/getData'
 import Image from 'next/image'
 import Bag from '../../../public/products/bag.png'

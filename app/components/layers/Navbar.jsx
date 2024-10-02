@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import Container from '../app/Container'
-import Logo from '../public/logo.png'
+import Container from './Container'
+import Logo from '../../../public/logo.png'
 import Li from './Li'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";

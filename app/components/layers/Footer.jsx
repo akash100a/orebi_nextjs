@@ -1,9 +1,9 @@
-import Container from '../app/Container'
-import FootLi from '../app/FootLi'
-import orebi from '../public/orebilogo.png'
-import fb from '../public/fb.png'
-import lindin from '../public/lindin.png'
-import ins from '../public/Instagram.png'
+import Container from '../layers/Container'
+import FootLi from './FootLi'
+import orebi from '../../../public/orebilogo.png'
+import fb from "../../../public/fb.png"
+import lindin from '../../../public/lindin.png'
+import ins from '../../../public/Instagram.png'
 import Image from 'next/image'
 import Link from 'next/link'
 

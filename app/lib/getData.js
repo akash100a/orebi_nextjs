@@ -1,7 +1,7 @@
 const getData = async (id) => {
-    let response = await fetch(`https://dummyjson.com/products/${id}`)
-    let data = await response.json()
-    return await data
+    let response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    let data = response.json()
+    return data;
 }
 
 export default getData
